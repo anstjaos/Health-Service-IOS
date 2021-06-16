@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D91089A2267A05DA001F2E3A /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91089A1267A05DA001F2E3A /* SignIn.storyboard */; };
+		D91089A4267A096A001F2E3A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91089A3267A096A001F2E3A /* SignInViewController.swift */; };
 		D967FA562678A88B004F0C45 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967FA552678A88B004F0C45 /* LoginViewController.swift */; };
 		D96D31132670BBEA000AED98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D31122670BBEA000AED98 /* AppDelegate.swift */; };
 		D96D31152670BBEA000AED98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D31142670BBEA000AED98 /* SceneDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D91089A1267A05DA001F2E3A /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		D91089A3267A096A001F2E3A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D967FA552678A88B004F0C45 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D96D310F2670BBEA000AED98 /* health-service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "health-service.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96D31122670BBEA000AED98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,7 @@
 			children = (
 				D96D31162670BBEA000AED98 /* ViewController.swift */,
 				D967FA552678A88B004F0C45 /* LoginViewController.swift */,
+				D91089A3267A096A001F2E3A /* SignInViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -53,6 +58,7 @@
 			children = (
 				D96D31182670BBEA000AED98 /* Main.storyboard */,
 				D96D311D2670BBEB000AED98 /* LaunchScreen.storyboard */,
+				D91089A1267A05DA001F2E3A /* SignIn.storyboard */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -143,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91089A2267A05DA001F2E3A /* SignIn.storyboard in Resources */,
 				D96D311F2670BBEB000AED98 /* LaunchScreen.storyboard in Resources */,
 				D96D311C2670BBEB000AED98 /* Assets.xcassets in Resources */,
 				D96D311A2670BBEA000AED98 /* Main.storyboard in Resources */,
@@ -159,6 +166,7 @@
 				D967FA562678A88B004F0C45 /* LoginViewController.swift in Sources */,
 				D96D31172670BBEA000AED98 /* ViewController.swift in Sources */,
 				D96D31132670BBEA000AED98 /* AppDelegate.swift in Sources */,
+				D91089A4267A096A001F2E3A /* SignInViewController.swift in Sources */,
 				D96D31152670BBEA000AED98 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
