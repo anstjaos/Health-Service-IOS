@@ -20,6 +20,10 @@ class LoginViewController: UIViewController {
         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainVC, animated: false)
     }
     
+    @IBAction func signIn(_ sender: Any) {
+        guard let signInVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInView") as? SignInViewController else { return }
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(signInVC, animated: false)
+    }
     /*
     // MARK: - Navigation
 

@@ -68,6 +68,16 @@
                                     <action selector="login:" destination="EgZ-c6-zTC" eventType="touchUpInside" id="XRv-hW-Pfc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1i-LB-cyy">
+                                <rect key="frame" x="53" y="452" width="269" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="회원가입"/>
+                                <connections>
+                                    <action selector="login:" destination="EgZ-c6-zTC" eventType="touchUpInside" id="Bum-8d-Dbo"/>
+                                    <action selector="signIn:" destination="EgZ-c6-zTC" eventType="touchUpInside" id="8Iv-9g-wQK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bV6-9B-M3R"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
