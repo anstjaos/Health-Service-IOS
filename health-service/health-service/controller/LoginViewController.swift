@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func login(_ sender: Any) {
         guard let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainView") as? ViewController else { return }
+        self.navigationController?.pushViewController(mainVC, animated: true)
         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainVC, animated: false)
     }
     

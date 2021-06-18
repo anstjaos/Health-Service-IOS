@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D91089A2267A05DA001F2E3A /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91089A1267A05DA001F2E3A /* SignIn.storyboard */; };
 		D91089A4267A096A001F2E3A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91089A3267A096A001F2E3A /* SignInViewController.swift */; };
 		D967FA562678A88B004F0C45 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967FA552678A88B004F0C45 /* LoginViewController.swift */; };
 		D96D31132670BBEA000AED98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D31122670BBEA000AED98 /* AppDelegate.swift */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D91089A1267A05DA001F2E3A /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		D91089A3267A096A001F2E3A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D967FA552678A88B004F0C45 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D96D310F2670BBEA000AED98 /* health-service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "health-service.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +32,7 @@
 		D96D31202670BBEB000AED98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9A2262F267B67FF007EE25B /* UserInfoDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoDto.swift; sourceTree = "<group>"; };
 		D9A22631267B69E3007EE25B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		D9F5B0A1267CAFC3009658A5 /* health-service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "health-service.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +61,6 @@
 			children = (
 				D96D31182670BBEA000AED98 /* Main.storyboard */,
 				D96D311D2670BBEB000AED98 /* LaunchScreen.storyboard */,
-				D91089A1267A05DA001F2E3A /* SignIn.storyboard */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -86,6 +84,7 @@
 		D96D31112670BBEA000AED98 /* health-service */ = {
 			isa = PBXGroup;
 			children = (
+				D9F5B0A1267CAFC3009658A5 /* health-service.entitlements */,
 				D9A2262D267B67E0007EE25B /* model */,
 				D9A2262B267B6697007EE25B /* service */,
 				D967FA4E26789FAB004F0C45 /* storyboard */,
@@ -179,7 +178,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D91089A2267A05DA001F2E3A /* SignIn.storyboard in Resources */,
 				D96D311F2670BBEB000AED98 /* LaunchScreen.storyboard in Resources */,
 				D96D311C2670BBEB000AED98 /* Assets.xcassets in Resources */,
 				D96D311A2670BBEA000AED98 /* Main.storyboard in Resources */,
@@ -346,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "health-service/health-service.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USDM6436M7;
 				INFOPLIST_FILE = "health-service/Info.plist";
@@ -365,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "health-service/health-service.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USDM6436M7;
 				INFOPLIST_FILE = "health-service/Info.plist";
