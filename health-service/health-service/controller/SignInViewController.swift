@@ -32,6 +32,8 @@ class SignInViewController: UIViewController {
         if (result == true) {
             guard let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainView") as? ViewController else { return }
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainVC, animated: false)
+        } else {
+            showAlter(title: "가입 실패", message: "회원가입에 실패했습니다")
         }
     }
     
