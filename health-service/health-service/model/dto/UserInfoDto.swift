@@ -1,10 +1,3 @@
-//
-//  UserInfoDto.swift
-//  health-service
-//
-//  Created by NHN on 2021/06/17.
-//
-
 import Foundation
 
 class UserInfoDto {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D91089A4267A096A001F2E3A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91089A3267A096A001F2E3A /* SignInViewController.swift */; };
+		D939EA212682069300F9B0F2 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939EA202682069300F9B0F2 /* HttpRequest.swift */; };
 		D967FA562678A88B004F0C45 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967FA552678A88B004F0C45 /* LoginViewController.swift */; };
 		D96D31132670BBEA000AED98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D31122670BBEA000AED98 /* AppDelegate.swift */; };
 		D96D31152670BBEA000AED98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96D31142670BBEA000AED98 /* SceneDelegate.swift */; };
@@ -17,10 +18,12 @@
 		D96D311F2670BBEB000AED98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96D311D2670BBEB000AED98 /* LaunchScreen.storyboard */; };
 		D9A22630267B67FF007EE25B /* UserInfoDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2262F267B67FF007EE25B /* UserInfoDto.swift */; };
 		D9A22632267B69E3007EE25B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A22631267B69E3007EE25B /* UserService.swift */; };
+		D9CEDB412689E97200DFB6A3 /* UserCreateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CEDB402689E97200DFB6A3 /* UserCreateRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D91089A3267A096A001F2E3A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		D939EA202682069300F9B0F2 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		D967FA552678A88B004F0C45 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D96D310F2670BBEA000AED98 /* health-service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "health-service.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96D31122670BBEA000AED98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		D96D31202670BBEB000AED98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9A2262F267B67FF007EE25B /* UserInfoDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoDto.swift; sourceTree = "<group>"; };
 		D9A22631267B69E3007EE25B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		D9CEDB402689E97200DFB6A3 /* UserCreateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreateRequest.swift; sourceTree = "<group>"; };
 		D9F5B0A1267CAFC3009658A5 /* health-service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "health-service.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D939EA1F2682067E00F9B0F2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				D939EA202682069300F9B0F2 /* HttpRequest.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		D967FA4D26789F96004F0C45 /* controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +96,7 @@
 		D96D31112670BBEA000AED98 /* health-service */ = {
 			isa = PBXGroup;
 			children = (
+				D939EA1F2682067E00F9B0F2 /* common */,
 				D9F5B0A1267CAFC3009658A5 /* health-service.entitlements */,
 				D9A2262D267B67E0007EE25B /* model */,
 				D9A2262B267B6697007EE25B /* service */,
@@ -108,6 +121,7 @@
 		D9A2262D267B67E0007EE25B /* model */ = {
 			isa = PBXGroup;
 			children = (
+				D9CEDB3F2689E96100DFB6A3 /* request */,
 				D9A2262E267B67E9007EE25B /* dto */,
 			);
 			path = model;
@@ -119,6 +133,14 @@
 				D9A2262F267B67FF007EE25B /* UserInfoDto.swift */,
 			);
 			path = dto;
+			sourceTree = "<group>";
+		};
+		D9CEDB3F2689E96100DFB6A3 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				D9CEDB402689E97200DFB6A3 /* UserCreateRequest.swift */,
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,8 +216,10 @@
 				D9A22632267B69E3007EE25B /* UserService.swift in Sources */,
 				D9A22630267B67FF007EE25B /* UserInfoDto.swift in Sources */,
 				D967FA562678A88B004F0C45 /* LoginViewController.swift in Sources */,
+				D9CEDB412689E97200DFB6A3 /* UserCreateRequest.swift in Sources */,
 				D96D31172670BBEA000AED98 /* ViewController.swift in Sources */,
 				D96D31132670BBEA000AED98 /* AppDelegate.swift in Sources */,
+				D939EA212682069300F9B0F2 /* HttpRequest.swift in Sources */,
 				D91089A4267A096A001F2E3A /* SignInViewController.swift in Sources */,
 				D96D31152670BBEA000AED98 /* SceneDelegate.swift in Sources */,
 			);
